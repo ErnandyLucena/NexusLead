@@ -30,22 +30,6 @@ const colors = {
 };
 
 // --- Componente de Logo (SVG) ---
-const Logo = ({ size = 60 }: { size?: number }) => (
-  <View style={{ marginBottom: 40, alignItems: 'center' }}>
-    <Svg width={size} height={size} viewBox="0 0 100 100">
-      <Path
-        d="M50 0 L93.3 25 V75 L50 100 L6.7 75 V25 L50 0Z"
-        fill={colors.primaryGreen}
-        fillOpacity="0.15"
-      />
-      <Path
-        d="M50 12.5 L84.65 31.25 V68.75 L50 87.5 L15.35 68.75 V31.25 L50 12.5Z"
-        stroke={colors.primaryGreen}
-        strokeWidth="8"
-      />
-    </Svg>
-  </View>
-);
 
 // --- Componente Principal ---
 export default function LoginScreen(): JSX.Element {
@@ -68,8 +52,6 @@ export default function LoginScreen(): JSX.Element {
         {/* Formas decorativas */}
         <View style={[styles.backgroundShape, styles.shape1]} />
         <View style={[styles.backgroundShape, styles.shape2]} />
-
-        <Logo />
 
         <Text style={styles.title}>Bem-vindo de volta</Text>
         <Text style={styles.subtitle}>Acesse sua plataforma para continuar</Text>
