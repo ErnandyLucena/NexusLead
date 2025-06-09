@@ -130,10 +130,7 @@ export default function HomeScreen({ navigation }: any) {
                 <Text style={styles.welcomeTitle}>Olá, Dr. Ernandy</Text>
                 <Text style={styles.welcomeSubtitle}>Visão geral dos insights do hospital.</Text>
             </View>
-            <TouchableOpacity onPress={() => navigation.replace('Login')} style={styles.logoutButton}>
-                <Icon name="log-out" size={14} color={TEXT_COLOR_DARK} />
-              
-            </TouchableOpacity>
+            
           </View>
           
           {/* Filtros */}

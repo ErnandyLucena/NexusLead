@@ -183,7 +183,7 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ navigation }) => {
     name: 'Dr. Ernandy',
     specialty: 'Cardiologista',
     crm: 'CRM/SP 123456',
-    email: 'dr.ernandy@unimed.com.br',
+    email: 'dr.ernandy@hostcom.br',
     phone: '(11) 99999-8888',
     avatarUrl: 'https://placehold.co/120x120/a3d4a0/2d3748?text=DE',
   };
@@ -225,7 +225,7 @@ const ProfileScreen: React.FC<ProfileScreenProps> = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity onPress={() => {}} style={styles.logoutButton}>
+      <TouchableOpacity onPress={() => navigation.replace('Login')} style={styles.logoutButton}>
         <Icon name="log-out" size={16} color={'#c53030'} />
         <Text style={styles.logoutButtonText}>Sair da Conta</Text>
       </TouchableOpacity>
